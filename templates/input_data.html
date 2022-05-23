@@ -1,0 +1,14 @@
+{% extends "base.html"  %}
+{% block content %}
+<form action="/input_data" method="post">
+    <p> 입력: <input type="text" id="input" name="input" method="post"></p>
+    <script type="text/javascript">// <![CDATA[
+        function loading(){
+            $("#loading").show();
+            $("#content").hide();       
+        }
+// ]]></script>
+</form>
+    
+    
+{% endblock %}
